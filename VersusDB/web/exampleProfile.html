@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Profile</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<ul>
+		<li><a href="login.jsp"> <img border="0" alt="VersusDB"
+				src="VersusDBLogo.png" width="222" height="35">
+		</a></li>
+		<li><a class="active" href="index.html">Home</a></li>
+		<li><a href="matches.html">Matches</a></li>
+		<li><a href="teams.html">Teams</a></li>
+		<li><a href="profile.jsp">Profile</a></li>
+		<li><a href="about.html">About</a></li>
+	</ul>
+
+	<div id="centerDoc">
+		<h1>Profile</h1>
+		<h2 class = "h2"> Name:</h2>
+		<p id="id1"></p> <br>
+		<h2 class = "h2"> Username:</h2>
+		<p id="id2"></p> <br>
+		<h2 class = "h2"> Teams:</h2>
+		<p id="id3"></p> <br>
+	
+	
+<script>
+	function populate(){
+		document.getElementById("id1").innerHTML = "Jeffrey Hale";
+		document.getElementById("id2").innerHTML = "coolcat66";
+		var msg = "1) The Avengers" + "<br>" + "2) Hateful 8" + "<br>" + "3) Ridiculous 6";
+		document.getElementById("id3").innerHTML = msg;
+	}
+
+	populate();
+</script>
+	
+	</div>
+
+</body>
+</html>
